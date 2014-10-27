@@ -56,6 +56,7 @@ define(['md5', 'json!app/lk/login/' + App.Utils.getLang() + '.json', 'jquery.coo
       delete this.User;
       App.Login.roles = App.Settings.defaultUserRoles;
       App.Login.isAutorized = false;
+      App.Login.set(App.Login.defaults);
       var that = this;
       this.sync('read', this, {
         url : '/lk/user/logout'

@@ -1,5 +1,6 @@
 requirejs.config({
   baseUrl : 'libs/js',
+  waitSeconds : 1000,
   paths   : {
     app : '../../app'
   },
@@ -31,11 +32,14 @@ requirejs.config({
     "backbone.collectionbinder" : {
       deps : ['backbone.modelbinder']
     },
+    "bootstrap-datetimepicker" : {
+      deps : ['bootstrap', 'moment', 'moment.ru']
+    },
     "jquery.cookie" : {
       deps : ['jquery']
     },
     "app/root/script"      : {
-      deps : ['backbone.routefilter', 'backbone.modelbinder', 'backbone.collectionbinder', 'underi18n', 'backbone', 'bootstrap', 'text', 'css', 'json', 'tpl']
+      deps : ['underi18n', 'text', 'css', 'json', 'tpl', 'backbone.routefilter', 'backbone.modelbinder', 'backbone.collectionbinder', 'bootstrap-datetimepicker']
     }
   }
 });

@@ -5,6 +5,7 @@ var express = require('express')
   , cookieParser = require('cookie-parser')
   , bodyParser = require('body-parser')
   , methodOverride = require('method-override')
+  , errorhandler = require('errorhandler')
   , expressSession = require('express-session')
   , FSStore = require('connect-fs')(expressSession)
   , app = express()
@@ -23,6 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride(/*'X-HTTP-Method-Override'*/));
 app.use(cookieParser());
+app.use(errorhandler());
 app.use(expressSession({secret: 'secret', store : new FSStore(options), cookie: { httpOnly: false, maxAge: 7 * 24 * 60 * 60 * 1000 }}));
 app.use(express.static(path.join(__dirname, '..', 'client')));
 
