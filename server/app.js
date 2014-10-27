@@ -26,7 +26,7 @@ app.use(methodOverride(/*'X-HTTP-Method-Override'*/));
 app.use(cookieParser());
 app.use(errorhandler());
 app.use(expressSession({secret: 'secret', store : new FSStore(options), cookie: { httpOnly: false, maxAge: 7 * 24 * 60 * 60 * 1000 }}));
-app.use(express.static(path.join(__dirname, '..', 'client')));
+app.use(express.static(path.join(__dirname, '..', 'client'), {maxAge : 86400000}));
 
 app.use('/', require('./routes/index'));
 app.use('/lk', require('./routes/lk'));

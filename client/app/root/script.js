@@ -46,6 +46,7 @@ define(["json!app/root/" + App.Utils.getLang() + ".json", "tpl!app/root/template
     before : {
       '*'            : function(route, params) {
         $('.menuItem').removeClass('active');
+        $('.bootstrap-datetimepicker-widget').remove();
       },
       '^lk(\\/.*)?$' : function(route, params) {
         $('.menuItemSidebar').removeClass('active');
