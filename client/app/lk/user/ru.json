@@ -1,0 +1,14 @@
+{
+  "userFormSubmitButtonText" : "Сохранить",
+  "userFormSurnameLabel" : "Фамилия",
+  "userFormSurnamePlaceholder" : "Фамилия",
+  "userFormFirstnameLabel" : "Имя",
+  "userFormFirstnamePlaceholder" : "Имя",
+  "userFormMiddlenameLabel" : "Отчество",
+  "userFormMiddlenamePlaceholder" : "Отчество",
+  "userFormBirthdayLabel" : "Фамилия",
+  "userFormBirthdayPlaceholder" : "Фамилия",
+  "userFormSubmitButtonText" : "Сохранить",
+  "errorUserFormFirstnameEmpty" : "Имя должено быть заполнено",
+  "errorUserFormSurnameEmpty" : "Фамилия должна быть заполнена"
+}

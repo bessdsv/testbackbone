@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server/run",
+    "postinstall": "npm install bower & node bower-installer-run.js & node postinstallSessionFS.js"
+  },
+  "dependencies": {
+    "blueimp-md5": "^1.1.0",
+    "body-parser": "~1.8.1",
+    "connect-fs": "^0.1.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.0.0",
+    "express": "~4.9.0",
+    "express-session": "^1.9.1",
+    "method-override": "^2.3.0",
+    "morgan": "~1.3.0",
+    "serve-favicon": "~2.1.3"
+  },
+  "devDependencies": {
+    "bower-installer": "git://github.com/bessdsv/bower-installer.git#temp",
+    "express-generator": "^4.9.0"
+  }
+}

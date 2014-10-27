@@ -1,0 +1,8 @@
+{
+  "formLoginHeader" : "Личный кабинет",
+  "formLoginLabelLogin" : "Логин",
+  "formLoginLabelPassword" : "Пароль",
+  "formLoginButtonSubmit" : "Вход",
+  "errorLoginFormLoginEmpty" : "Логин должен быть заполнен",
+  "errorLoginFormPasswordEmpty" : "Пароль должен быть заполнен"
+}
