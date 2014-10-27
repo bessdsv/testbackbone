@@ -24,4 +24,9 @@ router.get('/user/logout/', function(req, res) {
   res.status(200).send({success : true});
 });
 
+router.get('/user/:id/', function(req, res) {
+  var users = require('./../data/users') || {};
+  res.status(200).send(users[req.param('id')]);
+});
+
 module.exports = router;

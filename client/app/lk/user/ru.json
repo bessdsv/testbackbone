@@ -6,8 +6,8 @@
   "userFormFirstnamePlaceholder" : "Имя",
   "userFormMiddlenameLabel" : "Отчество",
   "userFormMiddlenamePlaceholder" : "Отчество",
-  "userFormBirthdayLabel" : "Фамилия",
-  "userFormBirthdayPlaceholder" : "Фамилия",
+  "userFormBirthdayLabel" : "День рождения",
+  "userFormBirthdayPlaceholder" : "День рождения",
   "userFormSubmitButtonText" : "Сохранить",
   "errorUserFormFirstnameEmpty" : "Имя должено быть заполнено",
   "errorUserFormSurnameEmpty" : "Фамилия должна быть заполнена"
