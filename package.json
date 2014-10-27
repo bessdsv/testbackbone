@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./server/run",
-    "postinstall": "npm install bower & node bower-installer-run.js & node postinstallSessionFS.js"
+    "postinstall": "npm install bower --save-dev & node bower-installer-run.js & node postinstallSessionFS.js"
   },
   "dependencies": {
     "blueimp-md5": "^1.1.0",

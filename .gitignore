@@ -2,3 +2,4 @@
 testbackbone.iml
 node_modules/*
 bower_components/*
+client/libs/*

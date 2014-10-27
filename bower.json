@@ -1,38 +1,49 @@
 {
-  "name": "test",
-  "version": "0.0.1",
-  "private": true,
-  "ignore": [
+  "name":         "test",
+  "version":      "0.0.1",
+  "private":      true,
+  "ignore":       [
     "**/.*",
     "node_modules",
     "bower_components"
   ],
-  "install": {
-    "path": {
-      "all": "client/libs",
-      "jquery": "client/libs/js",
-      "backbone": "client/libs/js",
-      "underscore": "client/libs/js",
-      "requirejs": "client/libs/js",
-      "html5shiv": "client/libs/js",
-      "respond": "client/libs/js",
-      "bootstrap": "client/libs",
-      "underi18n": "client/libs/js",
-      "requirejs-text": "client/libs/js",
-      "requirejs-i18n": "client/libs/js",
-      "require-css": "client/libs/js",
-      "requirejs-plugins": "client/libs/js",
-      "requirejs-tpl": "client/libs/js",
-      "Backbone.ModelBinder": "client/libs/js",
-      "backbone.routefilter": "client/libs/js",
-      "blueimp-md5": "client/libs/js",
-      "jquery-cookie" : "client/libs/js"
+  "install":      {
+    "path":    {
+      "all":                               "client/libs",
+      "jquery":                            "client/libs/js",
+      "backbone":                          "client/libs/js",
+      "underscore":                        "client/libs/js",
+      "requirejs":                         "client/libs/js",
+      "html5shiv":                         "client/libs/js",
+      "respond":                           "client/libs/js",
+      "bootstrap":                         "client/libs",
+      "underi18n":                         "client/libs/js",
+      "requirejs-text":                    "client/libs/js",
+      "requirejs-i18n":                    "client/libs/js",
+      "require-css":                       "client/libs/js",
+      "requirejs-plugins":                 "client/libs/js",
+      "requirejs-tpl":                     "client/libs/js",
+      "Backbone.ModelBinder":              "client/libs/js",
+      "backbone.routefilter":              "client/libs/js",
+      "blueimp-md5":                       "client/libs/js",
+      "jquery-cookie":                     "client/libs/js",
+      "eonasdan-bootstrap-datetimepicker": "client/libs"
     },
     "sources": {
-      "backbone.routefilter": [
+      "eonasdan-bootstrap-datetimepicker": {
+        "mapping": [
+          {
+            "bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js": "js/bootstrap-datetimepicker.js"
+          },
+          {
+            "bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css": "css/bootstrap-datetimepicker.css"
+          }
+        ]
+      },
+      "backbone.routefilter":              [
         "bower_components/backbone.routefilter/dist/backbone.routefilter.js"
       ],
-      "Backbone.ModelBinder": {
+      "Backbone.ModelBinder":              {
         "mapping": [
           {
             "bower_components/Backbone.ModelBinder/Backbone.CollectionBinder.js": "backbone.collectionbinder.js"
@@ -42,26 +53,26 @@
           }
         ]
       },
-      "requirejs-tpl": [
+      "requirejs-tpl":                     [
         "bower_components/requirejs-tpl/tpl.js"
       ],
-      "requirejs-plugins": [
+      "requirejs-plugins":                 [
         "bower_components/requirejs-plugins/src/json.js"
       ],
-      "requirejs-i18n": [
+      "requirejs-i18n":                    [
         "bower_components/requirejs-i18n/i18n.js"
       ],
-      "require-css": [
+      "require-css":                       [
         "bower_components/require-css/css.js"
       ],
-      "respond": {
+      "respond":                           {
         "mapping": [
           {
             "bower_components/respond/dest/respond.src.js": "respond.js"
           }
         ]
       },
-      "bootstrap": {
+      "bootstrap":                         {
         "mapping": [
           {
             "bower_components/bootstrap/dist/js/bootstrap.js": "js/bootstrap.js"
@@ -91,21 +102,22 @@
     }
   },
   "dependencies": {
-    "backbone": "~1.1.2",
-    "bootstrap": "~3.2.0",
-    "requirejs": "~2.1.15",
-    "html5shiv": "~3.7.2",
-    "respond": "~1.4.2",
-    "marionette": "~2.2.1",
-    "underi18n": "~1.0.0",
-    "requirejs-text": "~2.0.12",
-    "requirejs-i18n": "~2.0.4",
-    "require-css": "~0.1.7",
-    "requirejs-plugins": "~1.0.2",
-    "requirejs-tpl": "git://github.com/bessdsv/requirejs-tpl.git",
-    "Backbone.ModelBinder": "~1.0.5",
-    "backbone.routefilter": "git://github.com/bessdsv/backbone.routefilter.git#master",
-    "blueimp-md5": "~1.1.0",
-    "jquery-cookie": "~1.4.1"
+    "backbone":                          "~1.1.2",
+    "bootstrap":                         "~3.2.0",
+    "requirejs":                         "~2.1.15",
+    "html5shiv":                         "~3.7.2",
+    "respond":                           "~1.4.2",
+    "marionette":                        "~2.2.1",
+    "underi18n":                         "~1.0.0",
+    "requirejs-text":                    "~2.0.12",
+    "requirejs-i18n":                    "~2.0.4",
+    "require-css":                       "~0.1.7",
+    "requirejs-plugins":                 "~1.0.2",
+    "requirejs-tpl":                     "git://github.com/bessdsv/requirejs-tpl.git",
+    "Backbone.ModelBinder":              "~1.0.5",
+    "backbone.routefilter":              "git://github.com/bessdsv/backbone.routefilter.git#master",
+    "blueimp-md5":                       "~1.1.0",
+    "jquery-cookie":                     "~1.4.1",
+    "eonasdan-bootstrap-datetimepicker": "~3.1.3"
   }
 }
