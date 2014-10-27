@@ -44,7 +44,7 @@ requirejs.config({
   window.App = {
     Utils     : {
       getLang            : function() {
-        return ((navigator.language || navigator.userLanguage).toLowerCase() || window.App.Settings.defaultLang).match('(.*?)(-|$)')[1];
+        return (/*(navigator.language || navigator.userLanguage).toLowerCase() ||*/ window.App.Settings.defaultLang).match('(.*?)(-|$)')[1];
       },
       getMessagesFactory : function(messages) {
         if (_.isString(messages)) {
@@ -62,6 +62,7 @@ requirejs.config({
     Models      : {},
     Views       : {},
     Collections : {},
+    Dev : {},
     Router      : {},
     Classes     : {
       Models      : {},

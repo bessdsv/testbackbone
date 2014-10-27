@@ -53,7 +53,7 @@
         <div class = "form-group">
             <div class = "col-sm-offset-2 col-sm-10">
                 <button type = "submit"
-                        class = "btn btn-default"><%_ userFormSubmitButtonText %>
+                        class = "btn btn-lg btn-primary"><%_ userFormSubmitButtonText %>
                 </button>
             </div>
         </div>
