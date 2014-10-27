@@ -59,7 +59,6 @@ requirejs.config({
       cookieDomain : 'localhost'
     },
     Templates : {},
-    Dev : {Login : {login : 'test', password : 'test'}},
     Models      : {},
     Views       : {},
     Collections : {},
