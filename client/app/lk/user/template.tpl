@@ -41,13 +41,22 @@
         <div class = "form-group">
             <label for = "birthday"
                    class = "col-sm-2 control-label"><%_ userFormBirthdayLabel %></label>
-
             <div class = "col-sm-10">
-                <input type = "date"
-                       class = "form-control"
-                       id = "birthday"
+              <div class='input-group date' id='birthday'>
+                <input type='text' class="form-control" id = "birthday"
                        name = "birthday"
-                       placeholder = "<%_ userFormBirthdayPlaceholder %>">
+                       placeholder = "<%_ userFormBirthdayPlaceholder %>"/>
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                <script type="text/javascript">
+                  $(function () {
+                    $('#birthday').datetimepicker({
+                      language: '<%= defaultLang %>'
+                    });
+                  });
+</script>
+              </div>
             </div>
         </div>
         <div class = "form-group">

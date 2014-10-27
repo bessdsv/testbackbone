@@ -24,10 +24,11 @@ define([
   });
 
   App.Classes.Views.User = Backbone.View.extend({
-    template : tmpl['lk-user-template-id'](messages),
+    template : tmpl['lk-user-template-id'],
+    messages : messages,
     el       : App.Settings.LkContainer,
     render   : function() {
-      App.Settings.LkContainer.html(this.template);
+      App.Settings.LkContainer.html(this.template($.extend({}, this.messages, App.Settings)));
       this.errorTitle = this.$el.find('.error');
       this.showError(false);
       this.modelBinder.bind(this.model, App.Settings.LkContainer);

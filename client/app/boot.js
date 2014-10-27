@@ -1,6 +1,6 @@
 requirejs.config({
   baseUrl : 'libs/js',
-  waitSeconds : 1000,
+  waitSeconds : 10000,
   paths   : {
     app : '../../app'
   },
@@ -39,7 +39,7 @@ requirejs.config({
       deps : ['jquery']
     },
     "app/root/script"      : {
-      deps : ['underi18n', 'text', 'css', 'json', 'tpl', 'backbone.routefilter', 'backbone.modelbinder', 'backbone.collectionbinder', 'bootstrap-datetimepicker']
+      deps : ['text', 'css', 'json', 'tpl', 'underi18n', 'backbone.routefilter', 'backbone.modelbinder', 'backbone.collectionbinder', 'bootstrap-datetimepicker']
     }
   }
 });
