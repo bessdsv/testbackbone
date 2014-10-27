@@ -4,7 +4,7 @@ define([
 /*, 'css!app/lk/user/style'*/
 ], function(tmpl, messages) {
   App.Classes.Models.User = Backbone.Model.extend({
-    url : '/lk/user',
+    urlRoot : '/lk/user',
     defaults: {
       firstname: '',
       surname: '',
@@ -60,8 +60,6 @@ define([
       }
     }
   });
-debugger;
-  App.Views.User = new App.Classes.Views.User({model : App.User});
 });
 
 

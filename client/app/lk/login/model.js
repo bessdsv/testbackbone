@@ -27,7 +27,6 @@ define(['md5', 'json!app/lk/login/' + App.Utils.getLang() + '.json', 'jquery.coo
     url : '/lk/user/login',
 
     autorizeSuccess : function(user){
-      debugger;
       this.User = App.User = new App.Classes.Models.User(user);
       App.Router.navigate('lk', {trigger : true, replace : true});
     },

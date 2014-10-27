@@ -108,11 +108,18 @@ define(["json!app/root/" + App.Utils.getLang() + ".json", "tpl!app/root/template
     },
     lkProfile : function() {
       $('#sidebarLkMenuItemProfile').addClass('active');
+      App.User.fetch();
       if (!App.Classes.Views.User ) {
         require(['app/lk/user/script'], function() {
+          if (!App.Views.User){
+            App.Views.User = new App.Classes.Views.User({model : App.User});
+          }
           App.Views.User.render();
         });
       } else {
+        if (!App.Views.User){
+          App.Views.User = new App.Classes.Views.User({model : App.User});
+        }
         App.Views.User.render();
       }
     },
