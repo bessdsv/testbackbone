@@ -6,7 +6,7 @@
          role = "navigation">
         <div class = "list-group lk-navigator">
             <a href = "#lk" id="sidebarLkMenuItemMain"
-               class = "list-group-item menuItem menuItemSidebar active"><%_ lkMenuItemMainText %></a>
+               class = "list-group-item menuItem menuItemSidebar"><%_ lkMenuItemMainText %></a>
             <a href = "#lk/profile" id="sidebarLkMenuItemProfile"
                class = "list-group-item menuItem menuItemSidebar"><%_ lkMenuItemProfileText %></a>
             <a href = "#lk/services" id="sidebarLkMenuItemServices"
